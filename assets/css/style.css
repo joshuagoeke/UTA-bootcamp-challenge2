@@ -1,31 +1,41 @@
 /*global settings*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+:root{
+  --colorhf: blanchedalmond;;
+  --headerfont: Georgia, 'Times New Roman', Times, serif; 
+  --dark: darkblue;
+}
   
   body {
     min-height: 100%;
-    line-height: 1;
+    line-height: 1.5;
     font-family: sans-serif;
   }
   
   header{
-
+  padding-left: 5%;
+  background-color: var(--colorhf);
   }
 
   nav{
-
+    display: inline-flex;
   }
 
+  nav a {
+    padding: 5px;
+    float: right;
+    text-align: center;
+  }
 /*various headings*/
   h1 {
     font-size: 300%;
+    font-family: var(--headerfont);
+    
   }
   
   h2 {
     font-size: 200%;
+    font-family: var(--headerfont)
+    
   }  
 
   h3  {
@@ -37,10 +47,17 @@
     list-style: none;
   }
 
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  /* Matches the font of special elements to the rest of the page */
-  input, select, option, optgroup, textarea, button,
-  pre, code {
-    font-size: 100%;
-    font-family: inherit;
+
+
+ 
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
   }
