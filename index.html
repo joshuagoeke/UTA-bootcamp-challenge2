@@ -8,32 +8,66 @@
 
 <body>
     <header>
-        <h1>Josh Goeke</h1>
+        <div class="top-wrapper"><h1>Josh Goeke</h1></div>
         <nav> <!--what do you want to link?-->
-                <a>About Me</a>
-                <a>Work</a>
-                <a>Contact Me</a>
-                <a>Resume</a> 
+            <ul>
+                <li><a href = "#aboutme">About Me</a></li>
+                <li><a href = "#my-work">Work</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Resume</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <section class="about"><!--Put some classes or id's in here-->
+        <img src="./assets/images/pexels-miguel-á-padriñán-343457.jpg" alt="motherboard"/>
+        <div class="not100">
+            <section class="about" id="aboutme"><!--Put some classes or id's in here-->
                 <h2>About Me</h2>
-                <p>Josh is the coolest bald dude you know. He's like so super bald the shine from his scalp will blind you in certain light. It's the testosterone. That's really professional for a web page. Oh dear. He's kind of a goofball.</p>
+                <p>Josh is the coolest bald dude you know. He's like so super bald the shine from his scalp will blind you in certain light. It's the testosterone. That's really professional for a portfolio page. Oh dear. He's kind of a goofball.GIVEN I need to sample a potential employee's previous work
+                    WHEN I load their portfolio
+                    THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+                    WHEN I click one of the links in the navigation
+                    THEN the UI scrolls to the corresponding section
+                    WHEN I click on the link to the section about their work
+                    THEN the UI scrolls to a section with titled images of the developer's applications
+                    WHEN I am presented with the developer's first application
+                    THEN that application's image should be larger in size than the others
+                    WHEN I click on the images of the applications
+                    THEN I am taken to that deployed application
+                    WHEN I resize the page or view the site on various screens and devices
+                    THEN I am presented with a responsive layout that adapts to my viewport</p>
             </section>
         </div>
         <div>
             <section class="work">
-                <h2>Work</h2>
+                <h2 id="my-work">Work</h2>
         <div>
             <section id="biggie"><!--Big picture goes here-->
-
+                <img src="./assets/images/old-mill-wheel.jpg" alt="old mill wheel" />
+                <h3>Boot Camp Completion</h3>
+                <p>Through University of Texas- Austin</p>
             </section>
         </div>
         <div>
-            <section id="lilguy"><!--Smaller pictures-->
-
+            <section id="lilguy1"><!--Smaller pictures-->
+                <img src="./assets/images/pexels-arnie-chou-1089280.jpg" alt="old mill wheel" />
+                <h3>Boot Camp Completion</h3>
+                <p>Completed through Coursera</p>
+            </section>
+            <section id="lilguy2"><!--Smaller pictures-->
+                <img src="./assets/images/pexels-miguel-á-padriñán-343457.jpg" alt="old mill wheel" />
+                <h3>Data Camp Competition</h3>
+                <p>Completed for resume building</p>
+            </section>
+            <section id="lilguy3"><!--Smaller pictures-->
+                <img src="./assets/images/pexels-rachel-claire-8112379.jpg" alt="old mill wheel" />
+                <h3>Data Camp Competition</h3>
+                <p>Completed for resume building</p>
+            </section>
+            <section id="lilguy4"><!--Smaller pictures-->
+                <img src="./assets/images/old-mill-wheel.jpg" alt="old mill wheel" />
+                <h3>Community Organizing</h3>
+                <p>he wasn't always a programmer</p>
             </section>
             </section>
         </div>
