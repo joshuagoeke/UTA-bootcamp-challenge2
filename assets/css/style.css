@@ -24,7 +24,7 @@
     color: var(--light);
   }
   nav{
-    display: flex;
+    display: inline-flex;
   }
 
   nav ul {
@@ -37,17 +37,6 @@
   
   }
 
-  /* ul {
-    flex-direction: row;
-    padding: 5px;
-    float: right;
-   
-    font-size: 18px;
-    text-align: center;
-    justify-content: space-between;
-    min-height: 50px;
-    align-items: flex-end;
-  } */
 
   main img{
     width: 100%;
