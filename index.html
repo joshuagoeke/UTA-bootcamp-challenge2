@@ -10,7 +10,7 @@
     <header>
         <div class="top-wrapper"><h1>Josh Goeke</h1></div>
         <nav> <!--what do you want to link?-->
-            <ul>
+            <ul class="header-nav-ul">
                 <li><a href = "#aboutme">About Me</a></li>
                 <li><a href = "#my-work">Work</a></li>
                 <li><a href = "#contact-me">Contact</a></li>
@@ -20,10 +20,16 @@
     </header>
     <main>
         <img src="./assets/images/pexels-arnie-chou-1089280.jpg" alt="mossy bricks"/>
+
         <div class="not100">
-            <section class="about" id="aboutme">
-                <h2>About Me</h2>
-                <p>Josh is the coolest bald dude you know. He's like so super bald the shine from his scalp will blind you in certain light. It's the testosterone. That's really professional for a portfolio page. Oh dear. He's kind of a goofball.GIVEN I need to sample a potential employee's previous work
+
+            <section class="about" >
+                <div class="about-me-wrapper">
+                    <h2 id="aboutme">About Me</h2>
+                </div>
+
+                <div class="paragraph-me">
+                    Josh is the coolest bald dude you know. He's like so super bald the shine from his scalp will blind you in certain light. It's the testosterone. More than you wanted to know? Oh dear. He's kind of a goofball. GIVEN I need to sample a potential employee's previous work
                     WHEN I load their portfolio
                     THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
                     WHEN I click one of the links in the navigation
@@ -35,10 +41,10 @@
                     WHEN I click on the images of the applications
                     THEN I am taken to that deployed application
                     WHEN I resize the page or view the site on various screens and devices
-                    THEN I am presented with a responsive layout that adapts to my viewport</p>
+                    THEN I am presented with a responsive layout that adapts to my viewport
+                </div>
             </section>
         
-            <div>
             <section class="work">
                 <h2 id="my-work">Work</h2>
             <div>
@@ -70,7 +76,6 @@
                     <p>he wasn't always a programmer</p>
                  </section>
             </section>
-            </div>
 
             <section class="contact-container" id="contact-me">
                 <h2>Let's <br> connect!</h2>
@@ -82,7 +87,7 @@
             </section>
         </div>
     </main>
-
+    <script src="./assets/script.js"></script>
 </body>
-<script src="./assets/script.js"></script>
+
 </html>
