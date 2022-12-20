@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 1%;
+    padding: 2%;
     background-color: var(--colorhf);
     color: var(--light);
   }
@@ -28,7 +28,8 @@
     display: inline-flex;
   }
 
-  nav ul {
+  /* why doesn't this wrap under the h1 anymore? */
+  nav ul { 
     font-family: var(--textfont);
     font-size: 125%;
     display: flex;
@@ -36,6 +37,12 @@
     text-align: center;
     min-width: 350px;
     min-height: 10px;
+    font-weight: bolder;
+  }
+
+nav ul li a: hover {
+    color: (--dark);
+    text-shadow: 2px 2px 8px var(----hovercolor);
   }
 
   main img{
@@ -44,9 +51,9 @@
     object-fit: cover;
   }
 
-  /* .not100{
-    display: 96%;
-  } */
+.not100{
+    margin: 2%;
+  } 
 /*various headings*/
 /* .top-wrapper{
   width: 33%/
@@ -54,7 +61,6 @@
   h1 {
     font-size: 300%;
     font-family: var(--headerfont);
-    flex-wrap: nowrap;
   }
   
   h2 {
@@ -78,7 +84,24 @@
     flex-wrap: wrap;
   }
 
+  .contact-container{
+  
+  }
 
+.contact-container ul{
+  font-family: var(--textfont);
+    font-size: 125%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 350px;
+    min-height: 10px;
+}
+
+ .not100 a: hover {
+  color: (--dark);
+  text-shadow: 2px 2px 8px var(----hovercolor);
+}
 
  
   @media screen and (max-width: 768px) {
