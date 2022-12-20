@@ -12,13 +12,14 @@
   body {
     min-height: 100%;
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: var(--textfont);
   }
   
   header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 1%;
     background-color: var(--colorhf);
     color: var(--light);
@@ -29,14 +30,13 @@
 
   nav ul {
     font-family: var(--textfont);
+    font-size: 125%;
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
-    min-height: 50px;
     text-align: center;
-  
+    min-width: 350px;
+    min-height: 10px;
   }
-
 
   main img{
     width: 100%;
@@ -54,6 +54,7 @@
   h1 {
     font-size: 300%;
     font-family: var(--headerfont);
+    flex-wrap: nowrap;
   }
   
   h2 {
@@ -82,7 +83,7 @@
  
   @media screen and (max-width: 768px) {
     main,
-    nav {
+    nav, ul {
       flex-direction: column;
     }
   }
