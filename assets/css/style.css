@@ -227,13 +227,13 @@ padding-bottom: 1rem;
   width: 100%;
   height:100%;
 }
-/* .lil-cards img {
+ .lil-cards img {
   width: 450px;
   height: 250px: 
   display:flex;
   flex-wrap: wrap;
   padding: 1rem; 
-} */
+} 
 .work-title {
   /* border: solid 2px black;  */
   border-bottom: none;
@@ -248,13 +248,6 @@ padding-bottom: 1rem;
   display:flex;
 }
 
-.contact {
-  display: flex;
-  /* border: solid 2px pink; */
-  flex-direction: row;
-  padding: 1rem;
-}
-
 .contact-title {
   /* border: solid 2px black;  */
   border-bottom: none;
@@ -265,7 +258,12 @@ padding-bottom: 1rem;
   
 }
 
+.contact {
+display:inline-flex;
+  flex-direction: row;
+}
  .contact-content ul {
+  display:inline-flex;
   padding: 2%;
   
 }
