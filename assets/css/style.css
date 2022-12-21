@@ -25,11 +25,7 @@ header {
   background-color: var(--colorhf);
   color: var(--light);
 }
-/* nav {
-  display: flex;
-} */
 
-/* why doesn't this wrap under the h1 anymore? */
 .header-nav-ul {
   font-family: var(--textfont);
   font-size: 125%;
@@ -42,9 +38,9 @@ header {
   font-weight: bolder;
 }
 
-nav ul li a:: hover {
+nav ul li a::hover {
   color: (--dark);
-  text-shadow: 2px 2px 8px var(----hovercolor);
+  text-shadow: 2px 2px 8px var(--hovercolor);
 }
 
 main img {
@@ -53,45 +49,11 @@ main img {
   object-fit: cover;
 }
 
+/*various headings*/
 h1 {
   font-size: 300%;
   font-family: var(--headerfont);
-  flex-direction: column;
-}
-.not100 {
-  margin: 2%;
-}
-/*various headings*/
-
-.about {
-  display: flex;
-  /* border: solid 2px pink; */
-}
-
-.about-me-wrapper {
-  /* border: solid 2px black; */
-  border-right: 7px solid var(--dark);
-  /* height: 250px; */
-  /* float: left; */
-  width: 25%;
-  margin-right: 1rem;
-  padding-right: 1rem;
-  display: flex;
-
-  /* align-items: vertical; */
-}
-
-.about-me-wrapper h2 {
-  /* text-align: center; */
-  /* margin: auto 0; */
-  /* max-height: 0; */
-  height: fit-content;
-  align-self: center;
-}
-
-.paragraph-me {
-  float: left;
-  text-align: left;
+  /* flex-direction: column; */
 }
 
 h2 {
@@ -104,6 +66,74 @@ h3 {
   font-family: var(--headerfont);
 }
 
+.not100 {
+  margin: 2%;
+}
+
+
+.about {
+  display: flex;
+  border: solid 2px pink;
+  flex-direction: column;
+}
+
+  .about-me-title {
+  /* border: solid 2px black;  */
+  border-bottom: 7px solid var(--dark);
+  width: 25100;
+  margin: 1rem;
+  padding-bottom: 1rem;
+  display: inline-flex;
+  }
+/* do this for work and contact */
+  .about h2 {
+  text-align: center;
+  /* margin: auto 0; */
+  /* max-height: 0; */
+  height: fit-content;
+  align-self: center;
+  }
+
+  .about-me-content {
+  text-align: left;
+  margin: 1rem;
+  }
+  .work {
+    display: flex;
+    border: solid 2px pink;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .work-title {
+    /* border: solid 2px black;  */
+    border-bottom: 7px solid var(--dark);
+    width: 25100;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    
+  }
+
+  .work-content{
+    flex-direction:column;
+  }
+
+  .big-one #biggie img {
+    width: 100%;
+    height:100%;
+  }
+
+  .lil-cards {
+   display:flex;
+   flex-wrap: wrap; 
+  }
+
+  .card{
+    flex: basis 300;;
+    padding: 1rem;
+  }
+
+  
 ol,
 ul {
   list-style: none;
@@ -114,31 +144,31 @@ main {
   flex-wrap: wrap;
 }
 
-.contact-container {
+.contact {
+  flex-direction: column;
+  border: solid 2px pink;
 }
 
-.contact-container ul {
-  font-family: var(--textfont);
-  font-size: 125%;
+.contact-title{
+/* border: solid 2px black;  */
+border-bottom: 7px solid var(--dark);
+width: 25100;
+margin: 1rem;
+padding-bottom: 1rem;
+
+
+}
+.contact-content a {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  min-width: 350px;
-  min-height: 10px;
+  flex-direction: column;
+  font-family: var(--textfont);
+  font-weight: bolder;
 }
 
-.not100a: hover {
+.not100 a: hover {
   color: (--dark);
-  text-shadow: 2px 2px 8px var(----hovercolor);
+  text-shadow: 2px 2px 8px var(--hovercolor);
 }
-
-/* @media screen and (max-width: 768px) {
-  main,
-  nav,
-  ul {
-    flex-direction: column;
-  }
-} */
 
 
 @media screen and (min-width: 768px) {
@@ -151,4 +181,75 @@ main {
   header, .header-nav-ul {
     flex-direction: row;
   }
+
+  .about {
+    display: flex;
+    /* border: solid 2px pink; */
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .about-me-title {
+    /* border: solid 2px black;  */
+    border-bottom: none;
+    border-right: 7px solid var(--dark);
+    width: 25100;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  
+}
+
+.work {
+  display: flex;
+  /* border: solid 2px pink; */
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.big-one #biggie img {
+  width: 100%;
+  height:100%;
+}
+/* .lil-cards img {
+  width: 450px;
+  height: 250px: 
+  display:flex;
+  flex-wrap: wrap;
+  padding: 1rem; 
+} */
+.work-title {
+  /* border: solid 2px black;  */
+  border-bottom: none;
+  border-right: 7px solid var(--dark);
+  width: 25100;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  
+}
+
+.work-content{
+  display:flex;
+}
+
+.contact {
+  display: flex;
+  /* border: solid 2px pink; */
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.contact-title {
+  /* border: solid 2px black;  */
+  border-bottom: none;
+  border-right: 7px solid var(--dark);
+  width: 25100;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  
+}
+
+ .contact-content ul {
+  padding: 2%;
+  
+}
 }
