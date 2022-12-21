@@ -25,9 +25,9 @@ header {
   background-color: var(--colorhf);
   color: var(--light);
 }
-nav {
-  /* display: inline-flex; */
-}
+/* nav {
+  display: flex;
+} */
 
 /* why doesn't this wrap under the h1 anymore? */
 .header-nav-ul {
@@ -56,6 +56,7 @@ main img {
 h1 {
   font-size: 300%;
   font-family: var(--headerfont);
+  flex-direction: column;
 }
 .not100 {
   margin: 2%;
