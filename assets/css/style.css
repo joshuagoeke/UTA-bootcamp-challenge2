@@ -6,7 +6,7 @@
   --dark: rgb(34, 28, 12);
   --lilwidth: 400px;
   --navdcolor: #d8a47f;
-  --hovercolor: rgb(115, 252, 252);
+  --hovercolor: rgb(26, 54, 54);
 }
 
 body {
@@ -38,10 +38,24 @@ header {
   font-weight: bolder;
 }
 
-nav ul li a::hover {
+a:link {
+  color:rgb(112, 51, 28);
+}
+
+a:visited {
+  color:rgb(112, 51, 28);
+}
+
+a:hover {
   color: (--dark);
   text-shadow: 2px 2px 8px var(--hovercolor);
 }
+
+a:active{
+  color: (whitesmoke);
+  text-shadow: 2px 2px 8px var(--hovercolor);
+}
+
 
 main img {
   width: 100%;
@@ -73,7 +87,7 @@ h3 {
 
 .about {
   display: flex;
-  border: solid 2px pink;
+  /* border: solid 2px pink; */
   flex-direction: column;
 }
 
@@ -100,7 +114,7 @@ h3 {
   }
   .work {
     display: flex;
-    border: solid 2px pink;
+    /* border: solid 2px pink; */
     flex-direction: column;
     padding: 1rem;
   }
@@ -133,7 +147,14 @@ h3 {
     padding: 1rem;
   }
 
-  
+  .big-one img:hover{
+    filter:saturate(2.2) drop-shadow(0 0 1rem var(--hovercolor)); 
+  }
+  .card img:hover{
+    filter:saturate(2.2) drop-shadow(0 0 1rem var(--hovercolor)); 
+  }
+
+
 ol,
 ul {
   list-style: none;
@@ -146,7 +167,7 @@ main {
 
 .contact {
   flex-direction: column;
-  border: solid 2px pink;
+  /* border: solid 2px pink; */
 }
 
 .contact-title{
@@ -165,10 +186,6 @@ padding-bottom: 1rem;
   font-weight: bolder;
 }
 
-.not100 a: hover {
-  color: (--dark);
-  text-shadow: 2px 2px 8px var(--hovercolor);
-}
 
 
 @media screen and (min-width: 768px) {
